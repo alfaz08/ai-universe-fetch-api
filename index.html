@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI HUB</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a77096a90e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <section class="bg-orange-500 container mx-auto flex flex-col items-center justify-center">
+    <h1 class="text-center text-3xl border-l-orange-400">AI Universe Hub</h1>
+    <button class=" bg-red-300 text-xl rounded-lg">Sort By Date</button>
+  </section>
+  
+
+  <section>
+    <!--container-->
+      <div id="ai-container" class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      </div>
+      <!-- show all button -->
+      <div id="show-all-container" class="text-center my-8">
+        <button onclick="handleShowAll()" class="btn btn-accent">See More</button>
+    </div>
+  </section>
+
+  <!--loader-->
+  <section id="loading-spinner" class="hidden container mx-auto  flex flex-col items-center justify-center">
+    <span class=" loading loading-spinner loading-lg"></span>
+  </section>
+
+
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
